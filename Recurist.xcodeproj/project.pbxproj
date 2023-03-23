@@ -11,7 +11,6 @@
 		AA26095B29CC62BF00BA28A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA26095A29CC62BF00BA28A8 /* SceneDelegate.swift */; };
 		AA26095D29CC62BF00BA28A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA26095C29CC62BF00BA28A8 /* ViewController.swift */; };
 		AA26096229CC62C000BA28A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA26096129CC62C000BA28A8 /* Assets.xcassets */; };
-		AA26096529CC62C000BA28A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA26096329CC62C000BA28A8 /* LaunchScreen.storyboard */; };
 		AA26096E29CC67D000BA28A8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA26096D29CC67D000BA28A8 /* SnapKit */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +20,6 @@
 		AA26095A29CC62BF00BA28A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AA26095C29CC62BF00BA28A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA26096129CC62C000BA28A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AA26096429CC62C000BA28A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA26096629CC62C000BA28A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,14 +54,37 @@
 		AA26095729CC62BF00BA28A8 /* Recurist */ = {
 			isa = PBXGroup;
 			children = (
-				AA26095829CC62BF00BA28A8 /* AppDelegate.swift */,
-				AA26095A29CC62BF00BA28A8 /* SceneDelegate.swift */,
-				AA26095C29CC62BF00BA28A8 /* ViewController.swift */,
-				AA26096129CC62C000BA28A8 /* Assets.xcassets */,
-				AA26096329CC62C000BA28A8 /* LaunchScreen.storyboard */,
-				AA26096629CC62C000BA28A8 /* Info.plist */,
+				AA26097129CC699C00BA28A8 /* shared */,
+				AA26097029CC699200BA28A8 /* modules */,
+				AA26096F29CC695400BA28A8 /* config */,
 			);
 			path = Recurist;
+			sourceTree = "<group>";
+		};
+		AA26096F29CC695400BA28A8 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				AA26096629CC62C000BA28A8 /* Info.plist */,
+				AA26095829CC62BF00BA28A8 /* AppDelegate.swift */,
+				AA26095A29CC62BF00BA28A8 /* SceneDelegate.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		AA26097029CC699200BA28A8 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				AA26095C29CC62BF00BA28A8 /* ViewController.swift */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		AA26097129CC699C00BA28A8 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				AA26096129CC62C000BA28A8 /* Assets.xcassets */,
+			);
+			path = shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +151,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA26096529CC62C000BA28A8 /* LaunchScreen.storyboard in Resources */,
 				AA26096229CC62C000BA28A8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,17 +169,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AA26096329CC62C000BA28A8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA26096429CC62C000BA28A8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AA26096729CC62C000BA28A8 /* Debug */ = {
@@ -285,7 +294,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GA5QK7SQDU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Recurist/Info.plist;
+				INFOPLIST_FILE = Recurist/config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -312,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GA5QK7SQDU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Recurist/Info.plist;
+				INFOPLIST_FILE = Recurist/config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
