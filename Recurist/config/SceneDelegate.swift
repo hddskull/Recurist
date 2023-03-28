@@ -9,6 +9,7 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    private var coordinator: NavigationCoordinator?
     var window: UIWindow?
 
 
@@ -16,14 +17,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions)
     {
-        if let windowScene = scene as? UIWindowScene {
-            window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-            window?.windowScene = windowScene
-            
-            window?.rootViewController = ViewController()
-            window?.makeKeyAndVisible()
+        guard let windowScene = (scene as? UIWindowScene)
+        else {
+            return
         }
-        guard let _ = (scene as? UIWindowScene) else { return }
+        let window = UIWindow(windowScene: windowScene)
+        coordinator = NavigationCoordinator(window: window)
+        coordinator?.start(content: TestView())
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

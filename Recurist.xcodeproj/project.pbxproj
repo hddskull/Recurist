@@ -12,6 +12,9 @@
 		AA26095D29CC62BF00BA28A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA26095C29CC62BF00BA28A8 /* ViewController.swift */; };
 		AA26096229CC62C000BA28A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA26096129CC62C000BA28A8 /* Assets.xcassets */; };
 		AA26096E29CC67D000BA28A8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA26096D29CC67D000BA28A8 /* SnapKit */; };
+		AAA5D6AB29D3157B00903880 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5D6AA29D3157B00903880 /* NavigationCoordinator.swift */; };
+		AAA5D6AE29D3186200903880 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5D6AD29D3186200903880 /* TestView.swift */; };
+		AAA5D6B029D318D800903880 /* DetailTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5D6AF29D318D800903880 /* DetailTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		AA26095C29CC62BF00BA28A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA26096129CC62C000BA28A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA26096629CC62C000BA28A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAA5D6AA29D3157B00903880 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		AAA5D6AD29D3186200903880 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		AAA5D6AF29D318D800903880 /* DetailTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +60,9 @@
 		AA26095729CC62BF00BA28A8 /* Recurist */ = {
 			isa = PBXGroup;
 			children = (
-				AA26097129CC699C00BA28A8 /* shared */,
-				AA26097029CC699200BA28A8 /* modules */,
 				AA26096F29CC695400BA28A8 /* config */,
+				AA26097029CC699200BA28A8 /* modules */,
+				AA26097129CC699C00BA28A8 /* shared */,
 			);
 			path = Recurist;
 			sourceTree = "<group>";
@@ -64,9 +70,9 @@
 		AA26096F29CC695400BA28A8 /* config */ = {
 			isa = PBXGroup;
 			children = (
-				AA26096629CC62C000BA28A8 /* Info.plist */,
 				AA26095829CC62BF00BA28A8 /* AppDelegate.swift */,
 				AA26095A29CC62BF00BA28A8 /* SceneDelegate.swift */,
+				AA26096629CC62C000BA28A8 /* Info.plist */,
 			);
 			path = config;
 			sourceTree = "<group>";
@@ -74,7 +80,8 @@
 		AA26097029CC699200BA28A8 /* modules */ = {
 			isa = PBXGroup;
 			children = (
-				AA26095C29CC62BF00BA28A8 /* ViewController.swift */,
+				AAA5D6AC29D3184E00903880 /* Test */,
+				AAA5D6A929D3149200903880 /* navigation */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -85,6 +92,24 @@
 				AA26096129CC62C000BA28A8 /* Assets.xcassets */,
 			);
 			path = shared;
+			sourceTree = "<group>";
+		};
+		AAA5D6A929D3149200903880 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				AAA5D6AA29D3157B00903880 /* NavigationCoordinator.swift */,
+			);
+			path = navigation;
+			sourceTree = "<group>";
+		};
+		AAA5D6AC29D3184E00903880 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				AA26095C29CC62BF00BA28A8 /* ViewController.swift */,
+				AAA5D6AD29D3186200903880 /* TestView.swift */,
+				AAA5D6AF29D318D800903880 /* DetailTestView.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,8 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA26095D29CC62BF00BA28A8 /* ViewController.swift in Sources */,
+				AAA5D6AE29D3186200903880 /* TestView.swift in Sources */,
 				AA26095929CC62BF00BA28A8 /* AppDelegate.swift in Sources */,
+				AAA5D6AB29D3157B00903880 /* NavigationCoordinator.swift in Sources */,
 				AA26095B29CC62BF00BA28A8 /* SceneDelegate.swift in Sources */,
+				AAA5D6B029D318D800903880 /* DetailTestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
