@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CheckListItem: View {
+struct CheckListMainItem: View {
     
     //MARK: - Body
     var body: some View {
@@ -47,7 +47,7 @@ struct CheckListItem: View {
 
 struct CheckListItem_Previews: PreviewProvider {
     static var previews: some View {
-        CheckListItem(
+        CheckListMainItem(
             model: .init(
                 title: "Muay Thai",
                 backgroundColor: .secondary

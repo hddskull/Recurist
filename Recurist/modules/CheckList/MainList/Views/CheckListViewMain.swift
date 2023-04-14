@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CheckListView: View {
+struct CheckListViewMain: View {
     
     //MARK: - Body
     var body: some View {
@@ -34,9 +34,14 @@ struct CheckListView: View {
                 
                 Spacer()
                 
-                ForEach(vm.lists) { list in
-                    CheckListItem(model: list) {
-                        //action to detail list
+                ScrollView(
+                    .vertical,
+                    showsIndicators: false
+                ) {
+                    ForEach(vm.lists) { list in
+                        CheckListMainItem(model: list) {
+                            //action to detail list
+                        }
                     }
                 }
             }
@@ -57,6 +62,6 @@ struct CheckListView: View {
 
 struct CheckListView_Previews: PreviewProvider {
     static var previews: some View {
-        CheckListView()
+        CheckListViewMain()
     }
 }

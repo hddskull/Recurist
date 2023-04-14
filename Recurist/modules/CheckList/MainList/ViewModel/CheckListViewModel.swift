@@ -13,9 +13,23 @@ final class CheckListViewModel: ObservableObject {
     
     //MARK: - Init()
     init() {
-        self.lists = [.init(title: "Muay Thai", backgroundColor: .secondary),
-                      .init(title: "Groceries", backgroundColor: .blue.opacity(0.8)),
-                      .init(title: "My daily list", backgroundColor: .yellow.opacity(0.6))]
+        self.lists = [
+            .init(title: "Muay Thai", backgroundColor: .secondary),
+            .init(title: "Groceries", backgroundColor: .blue.opacity(0.8)),
+            .init(title: "My daily list", backgroundColor: .yellow.opacity(0.6)),
+            .init(title: "Muay Thai", backgroundColor: .secondary),
+            .init(title: "Groceries", backgroundColor: .blue.opacity(0.8)),
+            .init(title: "My daily list", backgroundColor: .yellow.opacity(0.6)),
+            .init(title: "Muay Thai", backgroundColor: .secondary),
+            .init(title: "Groceries", backgroundColor: .blue.opacity(0.8)),
+            .init(title: "My daily list", backgroundColor: .yellow.opacity(0.6)),
+            .init(title: "Muay Thai", backgroundColor: .secondary),
+            .init(title: "Groceries", backgroundColor: .blue.opacity(0.8)),
+            .init(title: "My daily list", backgroundColor: .yellow.opacity(0.6)),
+            .init(title: "Muay Thai", backgroundColor: .secondary),
+            .init(title: "Groceries", backgroundColor: .blue.opacity(0.8)),
+            .init(title: "My daily list", backgroundColor: .yellow.opacity(0.6))
+        ]
     }
     
     //MARK: - Funcs

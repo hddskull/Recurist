@@ -11,7 +11,6 @@ struct TitleView: View {
     var body: some View {
         Text(title)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.horizontal, 16)
             .foregroundColor(.primary)
             .font(
                 .system(
